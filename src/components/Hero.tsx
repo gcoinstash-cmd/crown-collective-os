@@ -26,7 +26,7 @@ export default function Hero({ onBookOpen }: HeroProps) {
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="flex items-center space-x-2.5 mb-6 text-[#E6C587] font-mono uppercase tracking-[0.3em] text-[10px]"
+              className="flex items-center space-x-2.5 mb-6 text-[#E6C587] font-mono uppercase tracking-[0.3em] text-xs font-semibold tracking-wider"
             >
               <Sparkles className="w-3.5 h-3.5 animate-pulse" />
               <span>Curation • Architecture • Hair Rituals</span>
@@ -79,7 +79,7 @@ export default function Hero({ onBookOpen }: HeroProps) {
             >
               <button
                 onClick={onBookOpen}
-                className="group flex items-center justify-between sm:justify-center space-x-4 px-8 py-4 bg-[#F7F4EB] text-[#0A0A0A] text-xs font-sans uppercase tracking-[0.25em] font-semibold transition-all duration-400 hover:bg-[#E6C587] hover:scale-[1.01] active:scale-95 shadow-lg"
+                className="group flex items-center justify-between sm:justify-center space-x-4 px-8 py-4 bg-[#F7F4EB] text-[#0A0A0A] text-base font-semibold min-h-[44px] font-sans uppercase tracking-[0.25em] font-semibold transition-all duration-400 hover:bg-[#E6C587] hover:scale-[1.01] active:scale-95 shadow-lg"
               >
                 <span>Book an Experience</span>
                 <ArrowRight className="w-4 h-4 text-[#0A0A0A] group-hover:translate-x-1.5 transition-transform duration-300" />
@@ -87,7 +87,7 @@ export default function Hero({ onBookOpen }: HeroProps) {
 
               <a
                 href="#curation"
-                className="flex items-center justify-center space-x-2 py-4 px-6 text-[11px] uppercase tracking-[0.25em] text-[#F7F4EB]/60 hover:text-white transition-all group duration-300"
+                className="flex items-center justify-center space-x-2 py-4 px-6 text-xs font-semibold uppercase tracking-[0.25em] text-[#F7F4EB]/60 hover:text-white transition-all group duration-300"
               >
                 <span>Explore Services</span>
                 <span className="h-[1px] w-4 bg-[#F7F4EB]/30 group-hover:w-8 group-hover:bg-[#E6C587] transition-all duration-500" />
@@ -99,7 +99,7 @@ export default function Hero({ onBookOpen }: HeroProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.45 }}
               transition={{ duration: 1.2, delay: 1 }}
-              className="mt-16 pt-8 border-t border-white/5 flex items-center justify-between text-[10px] font-mono tracking-widest text-[#F7F4EB]/50"
+              className="mt-16 pt-8 border-t border-white/5 flex items-center justify-between text-xs font-semibold tracking-wider font-mono tracking-widest text-[#F7F4EB]/50"
             >
               <div className="flex items-center space-x-2">
                 <MapPin className="w-3 h-3 text-[#E6C587]" />
@@ -140,7 +140,7 @@ export default function Hero({ onBookOpen }: HeroProps) {
                       The Silhouette Cut
                     </span>
                   </div>
-                  <span className="text-[10px] font-mono tracking-wider text-[#F7F4EB]/40">
+                  <span className="text-xs font-semibold tracking-wider font-mono tracking-wider text-[#F7F4EB]/40">
                     RES_2026
                   </span>
                 </div>

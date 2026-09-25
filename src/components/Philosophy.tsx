@@ -34,7 +34,7 @@ export default function Philosophy() {
             whileInView={{ opacity: 0.6 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 1 }}
-            className="block font-mono text-[10px] uppercase tracking-[0.35em] text-[#E6C587]"
+            className="block font-mono text-xs font-semibold tracking-wider uppercase tracking-[0.35em] text-[#E6C587]"
           >
             OUR CORE VALUE
           </motion.span>

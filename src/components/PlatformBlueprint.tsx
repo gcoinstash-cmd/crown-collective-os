@@ -68,7 +68,7 @@ export default function PlatformBlueprint({ isOpen, onClose }: PlatformBlueprint
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-6 py-3 text-[11px] font-sans uppercase tracking-[0.2em] relative transition-colors duration-300 ${
+                  className={`px-6 py-3 text-xs font-semibold font-sans uppercase tracking-[0.2em] relative transition-colors duration-300 ${
                     activeTab === tab ? 'text-[#E6C587]' : 'text-white/40 hover:text-white'
                   }`}
                 >
@@ -108,15 +108,15 @@ export default function PlatformBlueprint({ isOpen, onClose }: PlatformBlueprint
                       <div className="flex items-start space-x-2.5">
                         <CheckCircle2 className="w-4 h-4 text-[#E6C587] shrink-0 mt-0.5" />
                         <div>
-                          <span className="block text-[10px] font-mono text-white tracking-widest uppercase">UX VARIANTS</span>
-                          <span className="block text-[11px] text-[#F7F4EB]/70 font-light mt-0.5">Setup "Open Drawer" as a component variant mapped back to the Hero CTA block actions.</span>
+                          <span className="block text-xs font-semibold tracking-wider font-mono text-white tracking-widest uppercase">UX VARIANTS</span>
+                          <span className="block text-xs font-semibold text-[#F7F4EB]/70 font-light mt-0.5">Setup "Open Drawer" as a component variant mapped back to the Hero CTA block actions.</span>
                         </div>
                       </div>
                       <div className="flex items-start space-x-2.5 pt-3 border-t border-white/5">
                         <CheckCircle2 className="w-4 h-4 text-[#E6C587] shrink-0 mt-0.5" />
                         <div>
-                          <span className="block text-[10px] font-mono text-white tracking-widest uppercase">SCROLL TRANSFORMS</span>
-                          <span className="block text-[11px] text-[#F7F4EB]/70 font-light mt-0.5">Set the Hero visual frame to [Y Scale: 1] to [Y Scale: 1.08] scroll interactions.</span>
+                          <span className="block text-xs font-semibold tracking-wider font-mono text-white tracking-widest uppercase">SCROLL TRANSFORMS</span>
+                          <span className="block text-xs font-semibold text-[#F7F4EB]/70 font-light mt-0.5">Set the Hero visual frame to [Y Scale: 1] to [Y Scale: 1.08] scroll interactions.</span>
                         </div>
                       </div>
                     </div>
@@ -125,12 +125,12 @@ export default function PlatformBlueprint({ isOpen, onClose }: PlatformBlueprint
                   <div className="border border-white/5 bg-[#121212]/50 p-6 flex flex-col justify-between">
                     <div>
                       <span className="text-[8px] font-mono text-white/40 tracking-widest uppercase block">MIGRATION CODE SPEC</span>
-                      <p className="text-[11px] text-white/70 italic mt-3 font-serif">
+                      <p className="text-xs font-semibold text-white/70 italic mt-3 font-serif">
                         “Export directly via Framer Remix Links. Make sure all component properties map to layout coordinates perfectly.”
                       </p>
                       
                       {/* Technical specifications */}
-                      <div className="mt-6 space-y-2.5 font-mono text-[10px] text-zinc-500">
+                      <div className="mt-6 space-y-2.5 font-mono text-xs font-semibold tracking-wider text-zinc-300">
                         <div className="flex justify-between">
                           <span>Aesthetic Model:</span>
                           <span className="text-[#E6C587]">Zen Luxury Dark</span>
@@ -175,15 +175,15 @@ export default function PlatformBlueprint({ isOpen, onClose }: PlatformBlueprint
                       <div className="flex items-start space-x-2.5">
                         <CheckCircle2 className="w-4 h-4 text-[#E6C587] shrink-0 mt-0.5" />
                         <div>
-                          <span className="block text-[10px] font-mono text-white tracking-widest uppercase">CLASS CONVENTIONS</span>
-                          <span className="block text-[11px] text-[#F7F4EB]/70 font-light mt-0.5">Use `section_philosophy`, `curation_grid_wrapper`, and `text-serif-display` classes exactly.</span>
+                          <span className="block text-xs font-semibold tracking-wider font-mono text-white tracking-widest uppercase">CLASS CONVENTIONS</span>
+                          <span className="block text-xs font-semibold text-[#F7F4EB]/70 font-light mt-0.5">Use `section_philosophy`, `curation_grid_wrapper`, and `text-serif-display` classes exactly.</span>
                         </div>
                       </div>
                       <div className="flex items-start space-x-2.5 pt-3 border-t border-white/5">
                         <CheckCircle2 className="w-4 h-4 text-[#E6C587] shrink-0 mt-0.5" />
                         <div>
-                          <span className="block text-[10px] font-mono text-white tracking-widest uppercase">CMS COLLECTION MAP</span>
-                          <span className="block text-[11px] text-[#F7F4EB]/70 font-light mt-0.5">Connect "CurationMenu" cards dynamically to Webflow Services collection layout.</span>
+                          <span className="block text-xs font-semibold tracking-wider font-mono text-white tracking-widest uppercase">CMS COLLECTION MAP</span>
+                          <span className="block text-xs font-semibold text-[#F7F4EB]/70 font-light mt-0.5">Connect "CurationMenu" cards dynamically to Webflow Services collection layout.</span>
                         </div>
                       </div>
                     </div>
@@ -192,12 +192,12 @@ export default function PlatformBlueprint({ isOpen, onClose }: PlatformBlueprint
                   <div className="border border-white/5 bg-[#121212]/50 p-6 flex flex-col justify-between">
                     <div>
                       <span className="text-[8px] font-mono text-white/40 tracking-widest uppercase block">BOX MODEL METRICS</span>
-                      <p className="text-[11px] text-white/70 italic mt-3 font-serif">
+                      <p className="text-xs font-semibold text-white/70 italic mt-3 font-serif">
                         “Enforce margin control blocks. All paddings should respect high visual density spacing of 7rem to 9rem vertical gutters on desktop.”
                       </p>
 
                       {/* Technical specifications */}
-                      <div className="mt-6 space-y-2.5 font-mono text-[10px] text-zinc-500">
+                      <div className="mt-6 space-y-2.5 font-mono text-xs font-semibold tracking-wider text-zinc-300">
                         <div className="flex justify-between">
                           <span>Naming Rule:</span>
                           <span className="text-[#E6C587]">Client-First Framework v2</span>
@@ -242,15 +242,15 @@ export default function PlatformBlueprint({ isOpen, onClose }: PlatformBlueprint
                       <div className="flex items-start space-x-2.5">
                         <CheckCircle2 className="w-4 h-4 text-[#E6C587] shrink-0 mt-0.5" />
                         <div>
-                          <span className="block text-[10px] font-mono text-white tracking-widest uppercase">FLUID RESPONSIVE ENGINE</span>
-                          <span className="block text-[11px] text-[#F7F4EB]/70 font-light mt-0.5">Use exact "Scale Proportionally" layout model with % values on container columns.</span>
+                          <span className="block text-xs font-semibold tracking-wider font-mono text-white tracking-widest uppercase">FLUID RESPONSIVE ENGINE</span>
+                          <span className="block text-xs font-semibold text-[#F7F4EB]/70 font-light mt-0.5">Use exact "Scale Proportionally" layout model with % values on container columns.</span>
                         </div>
                       </div>
                       <div className="flex items-start space-x-2.5 pt-3 border-t border-white/5">
                         <CheckCircle2 className="w-4 h-4 text-[#E6C587] shrink-0 mt-0.5" />
                         <div>
-                          <span className="block text-[10px] font-mono text-white tracking-widest uppercase">DESIGN TOKENS</span>
-                          <span className="block text-[11px] text-[#F7F4EB]/70 font-light mt-0.5">Design token integration mapping the #E6C587 gold hex code to Wix Palette Custom 1.</span>
+                          <span className="block text-xs font-semibold tracking-wider font-mono text-white tracking-widest uppercase">DESIGN TOKENS</span>
+                          <span className="block text-xs font-semibold text-[#F7F4EB]/70 font-light mt-0.5">Design token integration mapping the #E6C587 gold hex code to Wix Palette Custom 1.</span>
                         </div>
                       </div>
                     </div>
@@ -259,12 +259,12 @@ export default function PlatformBlueprint({ isOpen, onClose }: PlatformBlueprint
                   <div className="border border-white/5 bg-[#121212]/50 p-6 flex flex-col justify-between">
                     <div>
                       <span className="text-[8px] font-mono text-white/40 tracking-widest uppercase block">DOCKING MATRIX</span>
-                      <p className="text-[11px] text-white/70 italic mt-3 font-serif">
+                      <p className="text-xs font-semibold text-white/70 italic mt-3 font-serif">
                         “Pin headers to Dock Left/Right. Ensure floating action panels scale gracefully without viewport intersection overflow.”
                       </p>
 
                       {/* Technical specifications */}
-                      <div className="mt-6 space-y-2.5 font-mono text-[10px] text-zinc-500">
+                      <div className="mt-6 space-y-2.5 font-mono text-xs font-semibold tracking-wider text-zinc-300">
                         <div className="flex justify-between">
                           <span>Wix Element:</span>
                           <span className="text-[#E6C587]">Advanced Section Builder</span>
@@ -289,11 +289,11 @@ export default function PlatformBlueprint({ isOpen, onClose }: PlatformBlueprint
             </div>
 
             {/* Close Footer Trigger */}
-            <div className="mt-10 pt-6 border-t border-white/10 flex justify-between items-center relative z-10 text-[10px] font-mono tracking-widest text-[#F7F4EB]/40">
+            <div className="mt-10 pt-6 border-t border-white/10 flex justify-between items-center relative z-10 text-xs font-semibold tracking-wider font-mono tracking-widest text-[#F7F4EB]/40">
               <span>CROWN & COLLECTIVE • COMMERCIAL DEVELOPER SPEC</span>
               <button
                 onClick={onClose}
-                className="px-5 py-2.5 bg-[#E6C587] hover:bg-white text-[#0A0A0A] uppercase tracking-[0.2em] text-[9px] font-sans font-bold transition-all duration-300"
+                className="px-5 py-3 min-h-[44px] bg-[#E6C587] hover:bg-white text-[#0A0A0A] uppercase tracking-[0.2em] text-[9px] font-sans font-bold transition-all duration-300"
               >
                 Exit Blueprint Overlay
               </button>

@@ -34,11 +34,11 @@ export default function Footer({ onBlueprintOpen, onBookOpen }: FooterProps) {
               </span>
             </div>
             
-            <p className="text-xs md:text-sm text-[#F7F4EB]/60 leading-relaxed font-light tracking-wide max-w-sm">
+            <p className="text-base font-semibold text-[#F7F4EB]/60 leading-relaxed font-light tracking-wide max-w-sm">
               An avant-garde physical sanctuary residing on Melrose, sculpting luxury textured hair crowns and rich organic color synthesis.
             </p>
 
-            <div className="space-y-3 pt-4 text-[11px] font-mono text-[#F7F4EB]/70 tracking-wider">
+            <div className="space-y-3 pt-4 text-xs font-semibold font-mono text-[#F7F4EB]/70 tracking-wider">
               <div className="flex items-center space-x-2.5">
                 <MapPin className="w-3.5 h-3.5 text-[#E6C587]" />
                 <span>8473 MELROSE PLACE, WEST HOLLYWOOD, CA 90069</span>
@@ -73,7 +73,7 @@ export default function Footer({ onBlueprintOpen, onBookOpen }: FooterProps) {
                 <span>SUNDAY - MONDAY</span>
                 <span>STUDIO REST CLOSED</span>
               </div>
-              <p className="text-[10px] text-zinc-500 leading-relaxed italic pt-2 font-serif">
+              <p className="text-xs font-semibold tracking-wider text-zinc-300 leading-relaxed italic pt-2 font-serif">
                 “To maintain our quiet client flow metrics, appointments require online reservation 48 hours in advance.”
               </p>
             </div>
@@ -85,14 +85,14 @@ export default function Footer({ onBlueprintOpen, onBookOpen }: FooterProps) {
               Digital Template Resale
             </h4>
             
-            <p className="text-[11px] text-[#F7F4EB]/50 leading-relaxed font-light tracking-wide">
+            <p className="text-xs font-semibold text-[#F7F4EB]/50 leading-relaxed font-light tracking-wide">
               Fully optimized for Framer, Webflow CMS collections, and Wix Studio docking engines. Read the tech specifications.
             </p>
 
             <div className="space-y-2.5">
               <button
                 onClick={onBlueprintOpen}
-                className="flex items-center space-x-2.5 text-xs text-[#E6C587] hover:text-white transition-colors uppercase tracking-widest font-mono font-medium text-left"
+                className="flex items-center space-x-2.5 text-base font-semibold min-h-[44px] text-[#E6C587] hover:text-white transition-colors uppercase tracking-widest font-mono font-medium text-left"
               >
                 <Compass className="w-3.5 h-3.5" />
                 <span>Inspect Spec Blueprint</span>
@@ -100,7 +100,7 @@ export default function Footer({ onBlueprintOpen, onBookOpen }: FooterProps) {
 
               <button
                 onClick={onBookOpen}
-                className="flex items-center space-x-2.5 text-xs text-[#F7F4EB]/80 hover:text-white transition-colors uppercase tracking-widest font-mono font-medium text-left"
+                className="flex items-center space-x-2.5 text-base font-semibold min-h-[44px] text-[#F7F4EB]/80 hover:text-white transition-colors uppercase tracking-widest font-mono font-medium text-left"
               >
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Reserve Consultation</span>
@@ -111,7 +111,7 @@ export default function Footer({ onBlueprintOpen, onBookOpen }: FooterProps) {
         </div>
 
         {/* Bottom Bar: Copyright and License info */}
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-[10px] font-mono tracking-widest text-[#F7F4EB]/40 uppercase">
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs font-semibold tracking-wider font-mono tracking-widest text-[#F7F4EB]/40 uppercase">
           <div className="flex items-center space-x-2.5">
             <span>© 2026 CROWN & COLLECTIVE INC.</span>
             <span>•</span>

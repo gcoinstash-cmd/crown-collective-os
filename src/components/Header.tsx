@@ -69,7 +69,7 @@ export default function Header({ onBookOpen, onBlueprintOpen, onAdminOpen }: Hea
             </a>
             <button
               onClick={onBlueprintOpen}
-              className="flex items-center space-x-1.5 text-xs font-sans uppercase tracking-[0.25em] text-[#E6C587] hover:text-white transition-colors duration-300"
+              className="flex items-center space-x-1.5 text-base font-semibold min-h-[44px] font-sans uppercase tracking-[0.25em] text-[#E6C587] hover:text-white transition-colors duration-300"
             >
               <Compass className="w-3 h-3" />
               <span>Blueprint</span>
@@ -80,14 +80,14 @@ export default function Header({ onBookOpen, onBlueprintOpen, onAdminOpen }: Hea
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={onBookOpen}
-              className="relative px-6 py-2.5 bg-[#F7F4EB] text-[#0A0A0A] text-xs font-sans uppercase tracking-[0.22em] font-medium transition-all duration-300 hover:bg-[#E6C587] hover:scale-[1.02] shadow-xs active:scale-95"
+              className="relative px-6 py-2.5 bg-[#F7F4EB] text-[#0A0A0A] text-base font-semibold min-h-[44px] font-sans uppercase tracking-[0.22em] font-medium transition-all duration-300 hover:bg-[#E6C587] hover:scale-[1.02] shadow-xs active:scale-95"
             >
               Book an Experience
             </button>
             {onAdminOpen && (
               <button
                 onClick={onAdminOpen}
-                className="px-3.5 py-2.5 bg-[#E6C587]/10 hover:bg-[#E6C587]/20 border border-[#E6C587]/40 text-[#E6C587] text-[10px] font-mono uppercase tracking-[0.2em] font-semibold transition-all rounded"
+                className="px-3.5 py-2.5 bg-[#E6C587]/10 hover:bg-[#E6C587]/20 border border-[#E6C587]/40 text-[#E6C587] text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono uppercase tracking-[0.2em] font-semibold transition-all rounded"
               >
                 [ ATELIER PASS ]
               </button>

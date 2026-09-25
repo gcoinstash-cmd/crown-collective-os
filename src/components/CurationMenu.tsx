@@ -41,13 +41,13 @@ export default function CurationMenu({ onBookOpen }: CurationMenuProps) {
         {/* Header Block */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20">
           <div className="max-w-lg">
-            <span className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#E6C587]">
+            <span className="font-mono text-xs font-semibold tracking-wider uppercase tracking-[0.35em] text-[#E6C587]">
               SERVICE PORTFOLIO
             </span>
             <h2 className="mt-4 font-serif text-3xl md:text-5xl leading-tight text-white font-light tracking-tight">
               Curated Services & <span className="italic">Hair Rituals</span>
             </h2>
-            <p className="mt-4 text-xs md:text-sm text-[#F7F4EB]/60 tracking-wide font-light">
+            <p className="mt-4 text-base font-semibold text-[#F7F4EB]/60 tracking-wide font-light">
               A bespoke curation of premium services instead of a cluttered prices list. Filter by your aesthetic intention and reserve your slow-salon block.
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function CurationMenu({ onBookOpen }: CurationMenuProps) {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2.5 text-[10px] uppercase tracking-[0.2em] font-medium transition-all duration-300 relative ${
+                  className={`px-4 py-2.5 text-xs font-semibold tracking-wider uppercase tracking-[0.2em] font-medium transition-all duration-300 relative ${
                     activeTab === tab.id
                       ? 'text-[#0A0A0A] bg-[#F7F4EB]'
                       : 'text-[#F7F4EB]/85 hover:text-white'
@@ -72,7 +72,7 @@ export default function CurationMenu({ onBookOpen }: CurationMenuProps) {
 
             <button
               onClick={() => setIsDrawerOpen(true)}
-              className={`px-4 py-3 text-[10px] uppercase tracking-[0.2em] font-medium transition-all duration-300 flex items-center space-x-1.5 border ${
+              className={`px-4 py-3 text-xs font-semibold tracking-wider uppercase tracking-[0.2em] font-medium transition-all duration-300 flex items-center space-x-1.5 border ${
                 isAnnotated 
                   ? 'border-cyan-500/50 bg-cyan-500/5 text-cyan-400 hover:border-cyan-400 hover:text-white' 
                   : 'border-[#E6C587]/30 text-[#E6C587] hover:border-[#E6C587] hover:text-white'
@@ -137,7 +137,7 @@ export default function CurationMenu({ onBookOpen }: CurationMenuProps) {
                     </div>
                     
                     <div className="text-right">
-                      <span className="font-mono text-[10px] text-zinc-400 tracking-widest block uppercase">
+                      <span className="font-mono text-xs font-semibold tracking-wider text-zinc-400 tracking-widest block uppercase">
                         FROM
                       </span>
                       {isAnnotated && (
@@ -176,7 +176,7 @@ export default function CurationMenu({ onBookOpen }: CurationMenuProps) {
                       <Sparkles className="w-3 h-3" />
                       <span>Curated Ritual Complement</span>
                     </div>
-                    <p className="text-[11px] text-[#F7F4EB]/80 italic font-serif">
+                    <p className="text-xs font-semibold text-[#F7F4EB]/80 italic font-serif">
                       “{service.ritualStep}”
                     </p>
                   </div>
@@ -190,12 +190,12 @@ export default function CurationMenu({ onBookOpen }: CurationMenuProps) {
                         bind: [duration]
                       </span>
                     )}
-                    <span className="flex items-center space-x-1.5 text-[10px] font-mono text-[#F7F4EB]/75">
+                    <span className="flex items-center space-x-1.5 text-xs font-semibold tracking-wider font-mono text-[#F7F4EB]/75">
                       <Clock className="w-3.5 h-3.5 text-[#E6C587]/80" />
                       <span>{service.duration} BLOCK</span>
                     </span>
-                    <span className="text-[10px] font-mono text-white/30">|</span>
-                    <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest">
+                    <span className="text-xs font-semibold tracking-wider font-mono text-white/30">|</span>
+                    <span className="text-xs font-semibold tracking-wider font-mono text-zinc-400 uppercase tracking-widest">
                       1-ON-1 REST
                     </span>
                   </div>
@@ -203,7 +203,7 @@ export default function CurationMenu({ onBookOpen }: CurationMenuProps) {
                   {/* Dynamic hovering action */}
                   <button
                     onClick={() => onBookOpen(service.id)}
-                    className="flex items-center space-x-2 text-[10px] font-sans uppercase tracking-[0.22em] font-medium text-white group-hover:text-[#E6C587] transition-colors duration-300 relative"
+                    className="flex items-center space-x-2 text-xs font-semibold tracking-wider font-sans uppercase tracking-[0.22em] font-medium text-white group-hover:text-[#E6C587] transition-colors duration-300 relative"
                   >
                     <span>Reserve Ritual</span>
                     <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />

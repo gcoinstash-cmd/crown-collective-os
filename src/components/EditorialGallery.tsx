@@ -57,13 +57,13 @@ export default function EditorialGallery() {
         
         {/* Title block */}
         <div className="max-w-2xl mb-16">
-          <span className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#E6C587] font-semibold">
+          <span className="font-mono text-xs font-semibold tracking-wider uppercase tracking-[0.35em] text-[#E6C587] font-semibold">
             CREATIVE ARCHIVES
           </span>
           <h2 className="mt-4 font-serif text-3xl md:text-5xl leading-tight text-white font-light tracking-tight">
             Visual Editorial <span className="italic">Gallery</span>
           </h2>
-          <p className="mt-4 text-xs md:text-sm text-[#F7F4EB]/80 tracking-wide font-light">
+          <p className="mt-4 text-base font-semibold text-[#F7F4EB]/80 tracking-wide font-light">
             A moody archive documenting structural shape, physical texture transformations, and chemical-free tone balance. Click on any frame to inspect the composition notes.
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function EditorialGallery() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`text-[9px] md:text-[10px] font-sans uppercase tracking-[0.22em] px-5 py-2.5 transition-all duration-300 relative cursor-pointer ${
+                className={`text-[9px] md:text-xs font-semibold tracking-wider font-sans uppercase tracking-[0.22em] px-5 py-2.5 transition-all duration-300 relative cursor-pointer ${
                   isActive
                     ? 'bg-[#E6C587] text-[#0d0d0d] font-bold border border-[#E6C587] shadow-[0_4px_16px_rgba(230,197,135,0.2)]'
                     : 'bg-white/[0.02] text-[#F7F4EB]/60 hover:text-white border border-white/10 hover:border-white/20 font-light hover:bg-white/[0.04]'
@@ -202,7 +202,7 @@ export default function EditorialGallery() {
                         <span className="block text-[8px] font-mono tracking-widest uppercase text-zinc-400 font-medium">
                           COMPILER
                         </span>
-                        <span className="text-[11px] font-serif text-[#E6C587] block mt-1 font-medium">
+                        <span className="text-xs font-semibold font-serif text-[#E6C587] block mt-1 font-medium">
                           Nia Crowne
                         </span>
                       </div>
@@ -210,7 +210,7 @@ export default function EditorialGallery() {
                         <span className="block text-[8px] font-mono tracking-widest uppercase text-zinc-400 font-medium">
                           METRIC ID
                         </span>
-                        <span className="text-[11px] font-mono text-[#F7F4EB]/90 block mt-1">
+                        <span className="text-xs font-semibold font-mono text-[#F7F4EB]/90 block mt-1">
                           MSN_ARC_002
                         </span>
                       </div>
@@ -220,7 +220,7 @@ export default function EditorialGallery() {
                   <div className="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
                     <button
                       onClick={(e) => toggleLike(e, selectedItem.id)}
-                      className="flex items-center space-x-2 text-[10px] font-sans uppercase tracking-[0.2em] text-[#F7F4EB] hover:text-[#E6C587] transition-all"
+                      className="flex items-center space-x-2 text-xs font-semibold tracking-wider font-sans uppercase tracking-[0.2em] text-[#F7F4EB] hover:text-[#E6C587] transition-all"
                     >
                       <Heart className={`w-4 h-4 ${likedItems[selectedItem.id] ? 'fill-[#E6C587] text-[#E6C587]' : ''}`} />
                       <span>{likedItems[selectedItem.id] ? 'Saved to collection' : 'Save Composition'}</span>

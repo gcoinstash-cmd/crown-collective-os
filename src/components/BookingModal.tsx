@@ -155,7 +155,7 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
 
             {/* Steps Progress Indicator (Step 1 to 5) */}
             {step < 5 && (
-              <div className="px-6 md:px-8 py-3.5 bg-zinc-900/30 border-b border-white/5 flex items-center justify-between text-[10px] font-mono tracking-widest text-[#F7F4EB]/40">
+              <div className="px-6 md:px-8 py-3.5 bg-zinc-900/30 border-b border-white/5 flex items-center justify-between text-xs font-semibold tracking-wider font-mono tracking-widest text-[#F7F4EB]/40">
                 <div className="flex items-center space-x-1">
                   <span className={`${step >= 1 ? 'text-[#E6C587]' : ''}`}>CURATIONS</span>
                   <ArrowRight className="w-2.5 h-2.5 opacity-50" />
@@ -282,14 +282,14 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
                             <h5 className="font-serif text-base text-white font-light tracking-wide">
                               {st.name}
                             </h5>
-                            <span className="text-[10px] font-mono text-[#E6C587] tracking-wider">
+                            <span className="text-xs font-semibold tracking-wider font-mono text-[#E6C587] tracking-wider">
                               {st.instagram}
                             </span>
                           </div>
-                          <span className="text-[10px] uppercase font-mono tracking-widest text-[#F7F4EB]/40 mt-0.5 block">
+                          <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-[#F7F4EB]/40 mt-0.5 block">
                             {st.role}
                           </span>
-                          <p className="text-[11px] text-[#F7F4EB]/60 leading-relaxed font-light mt-1.5 line-clamp-2">
+                          <p className="text-xs font-semibold text-[#F7F4EB]/60 leading-relaxed font-light mt-1.5 line-clamp-2">
                             {st.bio}
                           </p>
                         </div>
@@ -348,7 +348,7 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
                           }`}
                         >
                           <Calendar className={`w-3.5 h-3.5 mb-1.5 ${date === d.raw ? 'text-[#E6C587]' : 'text-white/30'}`} />
-                          <span className="text-[10px] font-mono uppercase tracking-wider">{d.formatted}</span>
+                          <span className="text-xs font-semibold tracking-wider font-mono uppercase tracking-wider">{d.formatted}</span>
                         </div>
                       ))}
                     </div>
@@ -371,7 +371,7 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
                           }`}
                         >
                           <Clock className={`w-3.5 h-3.5 ${time === ts ? 'text-[#E6C587]' : 'text-white/30'}`} />
-                          <span className="text-[11px] font-mono">{ts}</span>
+                          <span className="text-xs font-semibold font-mono">{ts}</span>
                         </div>
                       ))}
                     </div>
@@ -456,7 +456,7 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
                             <span className="block text-xs font-serif text-white font-light">
                               The Pure Sanctuary Block (Quiet Appointment)
                             </span>
-                            <span className="block text-[10px] text-[#F7F4EB]/40 mt-0.5 font-light leading-relaxed">
+                            <span className="block text-xs font-semibold tracking-wider text-[#F7F4EB]/40 mt-0.5 font-light leading-relaxed">
                               Check this if you prefer a meditative environment. Your resident stylist will focus purely on sensory cut parameters, restricting speech to absolute essential consultation metrics.
                             </span>
                           </div>
@@ -472,7 +472,7 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
                               <div
                                 key={opt}
                                 onClick={() => setRefreshment(opt)}
-                                className={`p-2.5 border text-center text-[10px] font-sans uppercase tracking-[0.1em] cursor-pointer transition-colors ${
+                                className={`p-2.5 border text-center text-xs font-semibold tracking-wider font-sans uppercase tracking-[0.1em] cursor-pointer transition-colors ${
                                   refreshment === opt
                                     ? 'border-[#E6C587] bg-[#E6C587]/5 text-white'
                                     : 'border-white/5 bg-[#121212]/40 text-[#F7F4EB]/50 hover:border-white/10'
@@ -528,33 +528,33 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <span className="text-[8px] text-white/40 block">CLIENT VISITOR</span>
-                        <span className="text-[11px] text-white font-medium block mt-0.5">{clientName}</span>
+                        <span className="text-xs font-semibold text-white font-medium block mt-0.5">{clientName}</span>
                       </div>
                       <div>
                         <span className="text-[8px] text-white/40 block">RESIDENT SCIENTIST</span>
-                        <span className="text-[11px] text-white block mt-0.5">{stylist?.name}</span>
+                        <span className="text-xs font-semibold text-white block mt-0.5">{stylist?.name}</span>
                       </div>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <span className="text-[8px] text-white/40 block">RESERVED RITUAL</span>
-                        <span className="text-[11px] text-white block mt-0.5 line-clamp-1">{service?.name}</span>
+                        <span className="text-xs font-semibold text-white block mt-0.5 line-clamp-1">{service?.name}</span>
                       </div>
                       <div>
                         <span className="text-[8px] text-white/40 block">CHRONO BLOCK</span>
-                        <span className="text-[11px] text-[#E6C587] block mt-0.5">{date} • {time}</span>
+                        <span className="text-xs font-semibold text-[#E6C587] block mt-0.5">{date} • {time}</span>
                       </div>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4 pt-2">
                       <div>
                         <span className="text-[8px] text-white/40 block">HOSPITALITY PROTOCOL</span>
-                        <span className="text-[10px] text-white block mt-0.5">{quietAppointment ? 'Silent Sanctuary' : 'Conversational Talk'}</span>
+                        <span className="text-xs font-semibold tracking-wider text-white block mt-0.5">{quietAppointment ? 'Silent Sanctuary' : 'Conversational Talk'}</span>
                       </div>
                       <div>
                         <span className="text-[8px] text-white/40 block">BAR APOTHECARY</span>
-                        <span className="text-[10px] text-white block mt-0.5">{refreshment}</span>
+                        <span className="text-xs font-semibold tracking-wider text-white block mt-0.5">{refreshment}</span>
                       </div>
                     </div>
 
@@ -581,7 +581,7 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
 
                   <button
                     onClick={onClose}
-                    className="w-full py-4 bg-[#F7F4EB] hover:bg-[#E6C587] text-[#0A0A0A] font-mono uppercase tracking-[0.25em] text-xs transition-colors"
+                    className="w-full py-4 bg-[#F7F4EB] hover:bg-[#E6C587] text-[#0A0A0A] font-mono uppercase tracking-[0.25em] text-base font-semibold min-h-[44px] transition-colors"
                   >
                     CLOSE PORTAL
                   </button>
@@ -596,7 +596,7 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
                 {step > 1 ? (
                   <button
                     onClick={handlePrev}
-                    className="flex items-center space-x-2 text-xs font-mono uppercase tracking-[0.18em] text-[#F7F4EB]/60 hover:text-white transition-colors cursor-pointer"
+                    className="flex items-center space-x-2 text-base font-semibold min-h-[44px] font-mono uppercase tracking-[0.18em] text-[#F7F4EB]/60 hover:text-white transition-colors cursor-pointer"
                   >
                     <ArrowLeft className="w-4 h-4" />
                     <span>PREV STEP</span>
@@ -609,7 +609,7 @@ export default function BookingModal({ isOpen, onClose, selectedServiceId }: Boo
 
                 <button
                   onClick={validateAndNext}
-                  className="flex items-center space-x-2.5 px-6 py-3.5 bg-[#F7F4EB] hover:bg-[#E6C587] text-[#0A0A0A] text-xs font-sans uppercase tracking-[0.22em] font-semibold transition-all shadow-md active:scale-95 cursor-pointer"
+                  className="flex items-center space-x-2.5 px-6 py-3.5 bg-[#F7F4EB] hover:bg-[#E6C587] text-[#0A0A0A] text-base font-semibold min-h-[44px] font-sans uppercase tracking-[0.22em] font-semibold transition-all shadow-md active:scale-95 cursor-pointer"
                 >
                   <span>{step === 4 ? 'Confirm Experience' : 'CONTINUE'}</span>
                   <ArrowRight className="w-3.5 h-3.5" />

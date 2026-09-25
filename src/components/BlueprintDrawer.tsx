@@ -81,10 +81,10 @@ export default function BlueprintDrawer({
           {/* Interactive Annotation Quick Toggle */}
           <div className="my-6 p-4 bg-zinc-900/50 border border-zinc-850 flex items-center justify-between">
             <div className="max-w-[70%]">
-              <span className="text-[10px] uppercase tracking-wider text-white font-medium block">
+              <span className="text-xs font-semibold tracking-wider uppercase tracking-wider text-white font-medium block">
                 Visual HUD Overlays
               </span>
-              <p className="text-[11px] text-zinc-400 font-light mt-1">
+              <p className="text-xs font-semibold text-zinc-400 font-light mt-1">
                 Toggle interactive grid lines, Webflow classes, and Framer node names directly in the live UI.
               </p>
             </div>
@@ -106,11 +106,11 @@ export default function BlueprintDrawer({
             <div>
               <div className="flex items-center space-x-2 mb-3">
                 <Database className="w-3.5 h-3.5 text-[#E6C587]" />
-                <span className="text-[10px] font-mono tracking-widest text-[#E6C587] uppercase font-bold">
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-[#E6C587] uppercase font-bold">
                   Webflow CMS Schema Guidelines
                 </span>
               </div>
-              <p className="text-[11px] text-zinc-400 font-light leading-relaxed mb-4">
+              <p className="text-xs font-semibold text-zinc-400 font-light leading-relaxed mb-4">
                 Structure your Webflow Collections using this exact scheme to link dynamically with the services pricing layout cards.
               </p>
 
@@ -122,13 +122,13 @@ export default function BlueprintDrawer({
                   >
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-serif text-white font-medium">{field.label}</span>
-                      <span className="text-[9px] font-mono text-zinc-500">{field.type}</span>
+                      <span className="text-[9px] font-mono text-zinc-300">{field.type}</span>
                     </div>
-                    <div className="flex items-center justify-between mt-2 pt-2 border-t border-zinc-900/60 font-mono text-[10px]">
+                    <div className="flex items-center justify-between mt-2 pt-2 border-t border-zinc-900/60 font-mono text-xs font-semibold tracking-wider">
                       <span className="text-zinc-400">slug-key: <code className="text-[#E6C587]">{field.key}</code></span>
                       <button
                         onClick={() => handleCopy(field.key, field.key)}
-                        className="text-zinc-500 hover:text-white transition-colors"
+                        className="text-zinc-300 hover:text-white transition-colors"
                         title="Copy Key Name"
                       >
                         {copiedField === field.key ? (
@@ -147,19 +147,19 @@ export default function BlueprintDrawer({
             <div className="pt-4 border-t border-zinc-900">
               <div className="flex items-center space-x-2 mb-3">
                 <Code className="w-3.5 h-3.5 text-[#E6C587]" />
-                <span className="text-[10px] font-mono tracking-widest text-[#E6C587] uppercase font-bold">
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-[#E6C587] uppercase font-bold">
                   Framer Component Bindings
                 </span>
               </div>
-              <p className="text-[11px] text-zinc-400 font-light leading-relaxed mb-4">
+              <p className="text-xs font-semibold text-zinc-400 font-light leading-relaxed mb-4">
                 Expose these component properties to allow clean content changes inside Framer without disrupting the layout hierarchy.
               </p>
 
               <div className="p-3.5 bg-zinc-950 border border-zinc-900 rounded-xs space-y-3">
                 {framerProps.map((prop) => (
-                  <div key={prop.name} className="flex items-center justify-between text-[11px] border-b border-zinc-900/40 pb-2 last:border-0 last:pb-0">
-                    <span className="font-mono text-white text-[11px]">{prop.name}</span>
-                    <div className="font-mono text-[10px] text-zinc-500 flex items-center space-x-2">
+                  <div key={prop.name} className="flex items-center justify-between text-xs font-semibold border-b border-zinc-900/40 pb-2 last:border-0 last:pb-0">
+                    <span className="font-mono text-white text-xs font-semibold">{prop.name}</span>
+                    <div className="font-mono text-xs font-semibold tracking-wider text-zinc-300 flex items-center space-x-2">
                       <span>{prop.type}</span>
                       <span className="bg-zinc-900 px-1.5 py-0.5 text-zinc-400">Default: {prop.default}</span>
                     </div>
@@ -171,7 +171,7 @@ export default function BlueprintDrawer({
         </div>
 
         {/* Footer */}
-        <div className="pt-6 border-t border-zinc-900 mt-8 text-[10px] font-mono text-zinc-500 flex items-center justify-between">
+        <div className="pt-6 border-t border-zinc-900 mt-8 text-xs font-semibold tracking-wider font-mono text-zinc-300 flex items-center justify-between">
           <span>SPEC ENG WRAPPER V1.2.0</span>
           <span>READY FOR COMMERCIAL TRANSFERS</span>
         </div>

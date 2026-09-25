@@ -119,7 +119,7 @@ export default function GalleryCard({ item, onClick, liked, onLikeToggle }: Gall
             <div className="w-10 h-10 rounded-full border border-[#E6C587]/30 flex items-center justify-center bg-black/75 backdrop-blur-md">
               <Plus className="w-5 h-5 text-[#E6C587]" />
             </div>
-            <span className="text-[10px] font-mono tracking-[0.3em] text-[#E6C587] uppercase font-bold">
+            <span className="text-xs font-semibold tracking-wider font-mono tracking-[0.3em] text-[#E6C587] uppercase font-bold">
               Inspect Notes
             </span>
           </div>
